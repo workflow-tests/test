@@ -17,7 +17,6 @@ jobs:
         with:
           github-token: "${{ env.ROBOT_PAT }}"
           jobs: lgtm
-          robot-name: robot
           prow-commands: |
             /assign
             /unassign
