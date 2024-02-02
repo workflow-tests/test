@@ -53,7 +53,3 @@ labels:
     matcher:
       comment: "^/nack$"
 
-  - label: "hold"
-    sync: true
-    matcher:
-      commits: "^/hold cancel.*"
