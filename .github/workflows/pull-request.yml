@@ -18,12 +18,12 @@ jobs:
     steps:
       - uses: fuxingloh/multi-labeler@v1.5.1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.ROBOT_PAT  }}
           config-path: .github/labeler.yml
 
       - uses: codelytv/pr-size-labeler@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ROBOT_PAT  }}
           xs_label: 'size/XS'
           xs_max_size: '30'
           s_label: 'size/S'
